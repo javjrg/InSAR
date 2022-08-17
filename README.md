@@ -1,1 +1,1 @@
-# Curso_InSAR
+# Introducción a la interferometría SAR
