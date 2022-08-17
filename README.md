@@ -11,4 +11,11 @@ ISCE está disponible en si pagina de GitHub [link](https://github.com/isce-fram
 ### Instalación 
 
 Para la instalación de ISCE2 usaremos ANACONDA
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
 
