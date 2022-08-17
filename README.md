@@ -1,1 +1,3 @@
 # Introducción a la interferometría SAR
+
+En este curso...
