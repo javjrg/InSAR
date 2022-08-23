@@ -1,6 +1,6 @@
-# Introducción a la interferometría SAR
+# Interferometría SAR
 
-En este curso...
+El objetivo de este repositorio.....
 
 ## ISCE
 
@@ -8,14 +8,45 @@ InSAR Scientific Computing Environment (ISCE) es un marco diseñado para procesa
 
 ISCE está disponible en si pagina de GitHub [link](https://github.com/isce-framework/isce2)
 
-### Instalación 
+### Instalación para Linux y MacOSX (intel)
 
-Para la instalación de ISCE2 usaremos ANACONDA
+La instalación de ISCE2 la haremos mediante anaconda, para ellos necesitamos los siguientes requerimientos:
+
 ```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
+Python 3.6
+cython
+gdal
+git
+h5py
+libgdal
+pytest
+numpy
+fftw
+scipy
+basemap
+scons
+opencv
+```
+Podemos escribir los requerimientos en un archivo de texto llamado "requirimientos.txt" y con ellos crear el entorno mediante anaconda con el comando
+```bash
+> conda create --name env_isce --file requerimientos.txt
+```
+Activamos el entorno antes creado
+```bash
+> conda activate env_isce
+```
+Instalamos ISCE2
+```bash
+> conda install –c conda-forge isce2 boto3 jupyter conda-build
 ```
 
+### MacOSX (Apple Silicon)
+
+Para las computadorar con Apple Silicon, podemos instalar ISCE2 con anaconda mediante Rosetta 2 siguiendo los siguientes pasos:
+```bash
+> CONDA_SUBDIR=osx-64 conda create --name env_isce --file requerimientos.txt 
+> conda activate env_isce
+> conda install –c conda-forge isce2 boto3 jupyter conda-build
+```
+
+## Proyectos
