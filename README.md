@@ -8,7 +8,9 @@ InSAR Scientific Computing Environment (ISCE) es un marco diseñado para procesa
 
 ISCE está disponible en si pagina de GitHub [link](https://github.com/isce-framework/isce2)
 
-### Instalación para Linux y MacOSX (intel)
+### Instalación 
+
+#### Linux y MacOSX (intel)
 
 La instalación de ISCE2 la haremos mediante anaconda, para ellos necesitamos los siguientes requerimientos:
 
@@ -40,7 +42,7 @@ Instalamos ISCE2
 > conda install –c conda-forge isce2 boto3 jupyter conda-build
 ```
 
-### MacOSX (Apple Silicon)
+#### MacOSX (Apple Silicon)
 
 Para las computadorar con Apple Silicon, podemos instalar ISCE2 con anaconda mediante Rosetta 2 siguiendo los siguientes pasos:
 ```bash
@@ -49,7 +51,7 @@ Para las computadorar con Apple Silicon, podemos instalar ISCE2 con anaconda med
 > conda install –c conda-forge isce2 boto3 jupyter conda-build
 ```
 
-### Microsoft Windows
+#### Microsoft Windows
 
 Para instalar en Microsoft Windows se debe intalar mediante WSL2 y seguir las instrucciones de instalación de Linux.
 
