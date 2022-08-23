@@ -49,4 +49,10 @@ Para las computadorar con Apple Silicon, podemos instalar ISCE2 con anaconda med
 > conda install –c conda-forge isce2 boto3 jupyter conda-build
 ```
 
+### Microsoft Windows
+
+Para instalar en Microsoft Windows se debe intalar mediante WSL2 y seguir las instrucciones de instalación de Linux.
+
 ## Proyectos
+
+En esta sección describiremos algunos preyecto donde se utilizó InSAR....
