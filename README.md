@@ -55,7 +55,7 @@ Para las computadorar con Apple Silicon, podemos instalar ISCE2 con anaconda med
 
 #### Microsoft Windows
 
-Para instalar en Microsoft Windows se debe intalar mediante WSL2 y seguir las instrucciones de instalación de Linux.
+Para Microsoft Windows, se debe intalar mediante WSL2 y seguir las instrucciones de instalación de Linux.
 
 <a id="proyectos"></a>
 ## Proyectos
