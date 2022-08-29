@@ -62,4 +62,4 @@ Para Microsoft Windows, se debe intalar mediante WSL2 y seguir las instrucciones
 
 En esta sección describiremos algunos preyecto donde se utilizó InSAR....
 
-* Desarrollo de un sistema de monitoreo de glaciares rocosos y cubiertos de detritos con uso de sensores remotos e inteligencia artificial [link](https://github.com/javjrg/Fondef_Rock_Glacier)
+* Desarrollo de un sistema de monitoreo de glaciares rocosos y cubiertos de detritos con uso de sensores remotos e inteligencia artificial [link](/Proyectos/Glaciar_de_Roca)
