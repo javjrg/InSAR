@@ -17,7 +17,7 @@ ISCE está disponible en si pagina de GitHub [link](https://github.com/isce-fram
 La instalación de ISCE2 la haremos mediante anaconda, para ellos necesitamos los siguientes requerimientos:
 
 ```
-Python 3.6
+python>=3.6
 cython
 gdal
 git
@@ -50,6 +50,7 @@ Para las computadorar con Apple Silicon, podemos instalar ISCE2 con anaconda med
 ```bash
 > CONDA_SUBDIR=osx-64 conda create --name env_isce --file requerimientos.txt 
 > conda activate env_isce
+> conda config --env --set subdir osx-64 
 > conda install –c conda-forge isce2 boto3 jupyter conda-build
 ```
 
