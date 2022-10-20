@@ -41,7 +41,7 @@ Activamos el entorno antes creado
 ```
 Instalamos ISCE2
 ```bash
-> conda install –c conda-forge isce2 boto3 jupyter conda-build
+> conda install -c conda-forge isce2 boto3 jupyter conda-build
 ```
 
 #### MacOSX (Apple Silicon)
@@ -51,7 +51,7 @@ Para las computadorar con Apple Silicon, podemos instalar ISCE2 con anaconda med
 > CONDA_SUBDIR=osx-64 conda create --name env_isce --file requerimientos.txt 
 > conda activate env_isce
 > conda config --env --set subdir osx-64 
-> conda install –c conda-forge isce2 boto3 jupyter conda-build
+> conda install -c conda-forge isce2 boto3 jupyter conda-build
 ```
 
 #### Microsoft Windows
