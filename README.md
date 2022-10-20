@@ -30,28 +30,32 @@ scipy
 basemap
 scons
 opencv
+isce2 
+boto3 
+jupyter 
+conda-build
 ```
 Podemos escribir los requerimientos en un archivo de texto llamado "requirimientos.txt" y con ellos crear el entorno mediante anaconda con el comando
 ```bash
-> conda create --name env_isce --file requerimientos.txt
+> conda create --name env_isce
 ```
 Activamos el entorno antes creado
 ```bash
 > conda activate env_isce
 ```
-Instalamos ISCE2
+Instalamos las librerías necesarias
 ```bash
-> conda install -c conda-forge isce2 boto3 jupyter conda-build
-```
+> conda install -c conda-forge --file requerimientos.txt
+``` 
 
 #### MacOSX (Apple Silicon)
 
-Para las computadorar con Apple Silicon, podemos instalar ISCE2 con anaconda mediante Rosetta 2 siguiendo los siguientes pasos:
+Para las computadoras con Apple Silicon, podemos instalar ISCE2 con anaconda mediante Rosetta 2 siguiendo los siguientes pasos:
 ```bash
-> CONDA_SUBDIR=osx-64 conda create --name env_isce --file requerimientos.txt 
+> CONDA_SUBDIR=osx-64 conda create --name env_isce
 > conda activate env_isce
 > conda config --env --set subdir osx-64 
-> conda install -c conda-forge isce2 boto3 jupyter conda-build
+> conda install -c conda-forge --file requerimientos.txt
 ```
 
 #### Microsoft Windows
