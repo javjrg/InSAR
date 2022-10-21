@@ -62,6 +62,71 @@ Para las computadoras con Apple Silicon, podemos instalar ISCE2 con anaconda med
 
 Para Microsoft Windows, se debe intalar mediante WSL2 y seguir las instrucciones de instalación de Linux.
 
+## MintPy
+
+El software Miami INsar Time-series en PYthon (MintPy) es un paquete de código abierto para el análisis de series temporales de radar de apertura sintética interferométrica (InSAR). Lee la pila de interferogramas (corregistrados y no envueltos) en formato ISCE, ARIA, FRInGE, HyP3, GMTSAR, SNAP, GAMMA o ROI_PAC, y produce un desplazamiento de la superficie terrestre tridimensional (2D en el espacio y 1D en el tiempo) en línea de dirección de la vista. Incluye un análisis de serie temporal de rutina (`smallbaselineApp.py`) y una caja de herramientas independiente.
+
+### Instalación 
+
+#### Linux 
+
+Ejecute lo siguiente en su terminal para descargar la versión de desarrollo de MintPy:
+
+```bash
+> mkdir tools
+> cd ~/tools
+> git clone https://github.com/insarlab/MintPy.git
+```
+Instale las dependencias en un entorno existente personalizado ejecutando:
+
+```bash
+> conda create --name mintpy_env
+> conda activate mintpy_env
+> conda install -c conda-forge --file ~/tools/MintPy/requirements.txt
+```
+Instale MintPy en el entorno actual con pip ejecutando:
+
+```bash
+> cd ~/tools
+> python -m pip install -e MintPy
+```
+
+#### macOS (intel)
+
+Instale Xcode con herramientas de línea de comandos, si aún no lo ha hecho.
+
+- Instalar `Xcode` desde la tienda de aplicaciones
+- instale `command line tools` dentro de XCode y acepte los términos de la licencia.
+
+```bash
+> xcode-select --install -s /Applications/Xcode.app/Contents/Developer/
+> sudo xcodebuild -license
+```
+- Instale [XQuartz](https://www.xquartz.org/), luego reinicie la terminal.
+
+Instalar MintPy a través de conda siguiendo las instrucciones para Linux.
+
+#### macOS (Apple Silicon)
+
+Para las computadoras con Apple Silicon, podemos instalar MintPy con anaconda mediante Rosetta 2 siguiendo los siguientes pasos:
+```bash
+> CONDA_SUBDIR=osx-64 conda create --name mintpy_env
+> conda activate mintpy_env
+> conda config --env --set subdir osx-64 
+> conda install -c conda-forge --file ~/tools/MintPy/requirements.txt
+```
+
+Luego, instale MintPy en el entorno actual con pip ejecutando:
+
+```bash
+> cd ~/tools
+> python -m pip install -e MintPy
+```
+
+#### Microsoft Windows
+
+Para Microsoft Windows, se debe intalar mediante WSL2 y seguir las instrucciones de instalación de Linux.
+
 <a id="proyectos"></a>
 ## Proyectos
 
