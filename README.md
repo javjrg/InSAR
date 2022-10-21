@@ -48,10 +48,8 @@ Instalamos las librerías necesarias
 > conda install -c conda-forge --file requerimientos.txt
 ``` 
 
-<div class="alert alert-danger">
-<b>Advertencia:</b>
+**Advertencia:
 Es necesario considerar una versión de python menos a 3.10 esto debido a errores al ejecutar el paso `rangecoreg` en `topsApp.py`. He probado con la versión python 3.9.13 y ha funcionado sin problemas.
-</div>
 
 #### MacOSX (Apple Silicon)
 
