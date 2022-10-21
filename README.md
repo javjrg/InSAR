@@ -35,6 +35,8 @@ boto3
 jupyter 
 conda-build
 ```
+**Advertencia:** Es necesario considerar una versión de python menos a 3.10 esto debido a errores al ejecutar el paso `rangecoreg` en `topsApp.py`. He probado con la versión python 3.9.13 y ha funcionado sin problemas.
+
 Podemos escribir los requerimientos en un archivo de texto llamado "requirimientos.txt" y con ellos crear el entorno mediante anaconda con el comando
 ```bash
 > conda create --name env_isce
@@ -48,7 +50,7 @@ Instalamos las librerías necesarias
 > conda install -c conda-forge --file requerimientos.txt
 ``` 
 
-**Advertencia:** Es necesario considerar una versión de python menos a 3.10 esto debido a errores al ejecutar el paso `rangecoreg` en `topsApp.py`. He probado con la versión python 3.9.13 y ha funcionado sin problemas.
+
 
 #### MacOSX (Apple Silicon)
 
