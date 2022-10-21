@@ -17,7 +17,7 @@ ISCE está disponible en si pagina de GitHub [link](https://github.com/isce-fram
 La instalación de ISCE2 la haremos mediante anaconda, para ellos necesitamos los siguientes requerimientos:
 
 ```
-python>=3.6
+python<3.10
 cython
 gdal
 git
@@ -47,6 +47,11 @@ Instalamos las librerías necesarias
 ```bash
 > conda install -c conda-forge --file requerimientos.txt
 ``` 
+
+<div class="alert alert-danger">
+<b>Advertencia:</b>
+Es necesario considerar una versión de python menos a 3.10 esto debido a errores al ejecutar el paso `rangecoreg` en `topsApp.py`. He probado con la versión python 3.9.13 y ha funcionado sin problemas.
+</div>
 
 #### MacOSX (Apple Silicon)
 
