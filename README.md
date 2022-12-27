@@ -1,8 +1,13 @@
 # Interferometría SAR
 
-La interferometría es una técnica utilizada para el seguimiento de deformaciones en la superficie y también en la generación de modelos de terreno. La idea central de la llamada Interferometría Diferencial o DInSAR, es hacer uso de la fase de la señal del radar de apertura sintética (SAR), el cual permite analizar la topografía y los cambios en la elevación del terreno entre las pasadas consecutivas del satélite en el mismo lugar.
+La interferometría satelital es una técnica que se utiliza para el estudio de deformaciones en la superficie como también en la generación de modelos de terreno. La idea central de la llamada Interferometría Diferencial o DInSAR, es hacer uso de la fase de la señal del radar de apertura sintética (SAR), el cual permite analizar la topografía y los cambios en la elevación del terreno entre las pasadas consecutivas del satélite en el mismo lugar.
 
-El objetivo de este repositorio es dar a conocer las aplicaciones de la interferometría en el estudio de las deformaciones de la suferpicie. Para ello, este repositporio cuenta con una sección donde se enseña como utilizar esta metodología [link](/Notebooks/) como también algunos proyectos donde esta técnica es usada [link](#proyectos)<br>
+El objetivo de este repositorio es ser una guía para las personas que se quieran iniciar en el uso de la interferometría satelital. Nos enfocaremos en la instalación del software necesario y daremos algunos ejemplos de como se utilizan estos.
+
+<div class="alert alert-warning">
+<b>FUERZA DEL FILTRO:</b>
+La cantidad de filtrado se puede controlar a través de la propiedad **"intensidad del filtro"** en el archivo **topsApp.xml**.</div>
+<div class="alert alert-danger">
 
 ## ISCE
 
@@ -129,11 +134,6 @@ Luego, instale MintPy en el entorno actual con pip ejecutando:
 
 #### Microsoft Windows
 
-Para Microsoft Windows, se debe intalar mediante WSL2 y seguir las instrucciones de instalación de Linux.
+Para Microsoft Windows, se debe instalar mediante WSL2 y seguir las instrucciones de instalación de Linux.
 
-<a id="proyectos"></a>
-## Proyectos
-
-En esta sección describiremos algunos preyecto donde se utilizó InSAR....
-
-* Desarrollo de un sistema de monitoreo de glaciares rocosos y cubiertos de detritos con uso de sensores remotos e inteligencia artificial [link](/Proyectos/Glaciar_de_Roca)
+# Series de tiempo
