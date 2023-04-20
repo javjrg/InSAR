@@ -39,7 +39,6 @@ La instalación de ISCE2 la haremos mediante
 requerimientos:
 
 ```
-python<3.10
 cython
 gdal
 git
@@ -66,7 +65,7 @@ Podemos escribir los requerimientos en un archivo de texto llamado
 "requirimientos.txt" y con ellos crear el entorno mediante anaconda con el 
 comando
 ```bash
-> conda create --name env_isce
+> conda create --name env_isce python=3.9
 ```
 Activamos el entorno antes creado
 ```bash
