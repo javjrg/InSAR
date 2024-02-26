@@ -59,7 +59,7 @@ shapely
 ```
 **Advertencia:** Es necesario considerar una versión de python menor a 
 **3.10**, esto debido a errores al ejecutar el paso `rangecoreg` en 
-`topsApp.py`. En este repositorio se ha probado la versión **3.9.13** (la versión recomendada es la **3.6**) y ha 
+`topsApp.py`. En este repositorio se ha probado la versión **3.6.13** y ha 
 funcionado sin problemas.
 
 Podemos escribir los requerimientos en un archivo de texto llamado 
