@@ -56,6 +56,7 @@ boto3
 jupyter 
 conda-build
 shapely
+sentineleof
 ```
 **Advertencia:** Es necesario considerar una versión de python menor a 
 **3.10**, esto debido a errores al ejecutar el paso `rangecoreg` en 
