@@ -87,7 +87,7 @@ mamba`, luego use `mamba install` para reemplazar `conda install`.
 Para las computadoras con Apple Silicon, podemos instalar ISCE2 con 
 anaconda mediante `Rosetta 2` siguiendo los siguientes pasos:
 ```bash
-> CONDA_SUBDIR=osx-64 conda create --name env_isce python=3.6
+> CONDA_SUBDIR=osx-64 conda create --name env_isce python=3.9
 > conda activate env_isce
 > conda config --env --set subdir osx-64 
 > conda install -c conda-forge --file requerimientos.txt
